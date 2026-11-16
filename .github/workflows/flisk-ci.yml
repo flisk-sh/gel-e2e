@@ -17,9 +17,12 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  build-test:
+    uses: flisk-sh/.github/.github/workflows/ci.yml@c24839adc12bb5043d9cb4fd28276e7214899c19 # ci/lanes test
+
   codeql:
     permissions:
       contents: read
       security-events: write
       actions: read
-    uses: flisk-sh/.github/.github/workflows/codeql.yml@16754801a8248cfa1525152ff5fc74e4cb12babf # v1.2.0
+    uses: flisk-sh/.github/.github/workflows/codeql.yml@c24839adc12bb5043d9cb4fd28276e7214899c19 # ci/lanes test

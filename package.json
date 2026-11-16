@@ -1,0 +1,11 @@
+{
+  "name": "gel-e2e",
+  "private": true,
+  "scripts": {
+    "lint": "node -e \"console.log('LANE-RAN lint')\"",
+    "typecheck": "node -e \"console.log('LANE-RAN typecheck')\"",
+    "test": "node -e \"console.log('LANE-RAN test')\"",
+    "build": "node -e \"console.log('LANE-RAN build')\"",
+    "test:e2e": "node -e \"console.log('LANE-RAN test:e2e')\""
+  }
+}
