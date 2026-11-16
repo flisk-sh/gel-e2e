@@ -5,6 +5,8 @@
     "pinned-actions": "report",
     "workflow-permissions": "report",
     "dead-links": "report",
-    "done-without-green": "report"
+    "done-without-green": "report",
+    "migrations-append-only": "report",
+    "api-contract": "report"
   }
 }
