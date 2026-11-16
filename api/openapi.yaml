@@ -5,6 +5,11 @@ info:
 paths:
   /users:
     get:
+      parameters:
+        - name: tenant
+          in: query
+          required: true
+          schema: { type: string }
       responses:
         "200":
           description: List users
@@ -16,13 +21,3 @@ paths:
       responses:
         "201":
           description: Created
-  /users/{id}:
-    get:
-      parameters:
-        - name: id
-          in: path
-          required: true
-          schema: { type: string }
-      responses:
-        "200":
-          description: One user
