@@ -8,5 +8,12 @@
     "done-without-green": "block",
     "migrations-append-only": "block",
     "api-contract": "block"
+  },
+  "adr_required": {
+    "paths": [
+      "src/**",
+      "db/**"
+    ],
+    "directory": "docs/adr"
   }
 }
