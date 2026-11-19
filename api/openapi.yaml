@@ -1,28 +1,24 @@
 openapi: 3.0.3
 info:
   title: GEL e2e probe API
-  version: "1.0"
+  version: "2.0"
 paths:
   /users:
     get:
-      responses:
-        "200":
-          description: List users
-    post:
-      requestBody:
-        content:
-          application/json:
-            schema: { type: object }
-      responses:
-        "201":
-          description: Created
-  /users/{id}:
-    get:
       parameters:
-        - name: id
-          in: path
+        - name: tenant
+          in: query
           required: true
           schema: { type: string }
       responses:
-        "200":
-          description: One user
+        "400":
+          description: Bad request
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { type: object, required: [email, name] }
+      responses:
+        "201":
+          description: Created
