@@ -1,0 +1,1 @@
+{ "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json", "name": "si.flisk/gel-e2e", "version": "1.0.0", "description": "Probe card for the agent-readiness guard.", "remotes": [{ "type": "streamable-http", "url": "https://e2e.flisk.si/mcp" }] }

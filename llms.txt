@@ -1,0 +1,3 @@
+# gel-e2e
+
+MCP: https://e2e.flisk.si/mcp
